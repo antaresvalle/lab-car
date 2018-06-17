@@ -1,1 +1,101 @@
 /* Los estilos de tu proyecto */
+
+*{
+	box-sizing: border-box;
+}
+
+nav ul a {
+	color: #212121;
+}
+
+nav a{
+	color: #212121;
+}
+
+/*nav .brand-logo{
+	transform: translate(-80%);
+}*/
+
+
+.padding-top-bottom{
+	padding: 2rem 0;
+}
+.hero{
+	background-image: url(../assets/images/taxi.jpg);
+	background-size: cover;
+	padding: 17vh 0;
+    background-position: bottom;
+    color: white;
+}
+
+.banner-hero{
+	height: 26vh;
+}
+
+.row{
+	margin-bottom: 0;
+}
+
+.row .col{
+	padding: 0 2rem;
+}
+
+.btn{
+	text-transform: none;
+}
+
+.border{
+	border: 1px solid white;
+
+}
+
+.banner{
+	padding: 2rem 0;
+}
+
+img{
+	max-width: 100%;
+}
+
+.center{
+	text-align: center;
+}
+
+.conductor{
+	background-image: url(../assets/images/conduce.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 40vh;
+}
+
+.col.s12.mask{
+	background-color: rgba(0,0,0,0.5);
+	height: 40vh;
+	    padding: 4rem;
+}
+
+/*.ruta {
+    text-align: center;
+}*/
+
+p{
+	font-size: 1.2em;
+}
+
+.map{
+	padding: 2rem 0;
+	border: 1px solid white;
+	margin-top: 2rem;
+}
+
+.social ul li{
+	display: inline-block;
+}
+
+.social ul li i{
+	margin-right: 0.4rem;
+}
+
+.logo-footer{
+	width: 10rem;
+}

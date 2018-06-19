@@ -1,6 +1,6 @@
 /* Los estilos de tu proyecto */
 
-*{
+* {
 	box-sizing: border-box;
 }
 
@@ -9,11 +9,11 @@ hr {
 }
 /*-------- HEADER --------*/
 
-header{
+header {
 	padding: 1rem 0;
 }
 
-nav.white{
+nav.white {
 	box-shadow: none;
 }
 
@@ -21,20 +21,20 @@ nav ul a {
 	color: #212121;
 }
 
-nav a{
+nav a {
 	color: #212121;
 }
 
-a.brand-logo.left{
+a.brand-logo.left {
 	left: 60px;
 }
 
-ul.right.hide-on-med-and-down{
+ul.right.hide-on-med-and-down {
 	margin-right: 5%;
 }
 
 
-.padding-top-bottom{
+.padding-top-bottom {
 	padding: 2rem 0;
 }
 
@@ -48,8 +48,34 @@ form.col.l12 {
     padding: 2rem;
 }
 
+div#registrate {
+    border-radius: 10px;
+    width: 30%;
+}
+
+.input-field.col.l6 {
+	/*background-color: white;*/
+}
+
+.modal {
+	max-height: 100%;
+}
+
+.btn-modal {
+	width: 100%;
+}
+
+a.modal-close.waves-effect.waves-green.btn-flat.right {
+    font-size: 2rem;
+}
+
+input.select-dropdown.dropdown-trigger {
+	color: white;
+}
+
+
 /*-------- HERO --------*/
-.hero{
+.hero {
 	background-image: url(../assets/images/taxi.jpg);
 	background-size: cover;
 	padding: 8rem 0;
@@ -65,20 +91,20 @@ img.logo-banner-hero-l.responsive-img {
      width: 23%; 
 }
 
-.col.s9.l5.offset-s3.offset-l7.amber.banner-hero{
+.col.s9.l5.offset-s3.offset-l7.amber.banner-hero {
 	padding-bottom: 2rem;
 }
 
-.btn-reg, .btn-cond{
+.btn-reg, .btn-cond {
 	margin: 1rem 0;
 }
 
-hr.o-bien{
+hr.o-bien {
 	text-align: center;
 	border: 1px white solid;
 }
 
-hr.o-bien:after{
+hr.o-bien:after {
 	content: "O bien";
 	display: inline-block;
 	padding: 0 1em;
@@ -88,15 +114,15 @@ hr.o-bien:after{
     background-color: #ffc107;
 }
 
-.row{
+.row {
 	margin-bottom: 0;
 }
 
-.row .col{
+.row .col {
 	padding: 0 2rem;
 }
 
-.btn{
+.btn {
 	text-transform: none;
 	border-radius: 5px; 
 }
@@ -146,11 +172,11 @@ i.material-icons.ruta {
     color: white;
 }
 
-input#from, input#to{
+input#from, input#to {
 	border-bottom: 1px solid white;
 }
 
-input#from:focus, input#to:focus{
+input#from:focus, input#to:focus {
 	box-shadow: 0 1px 0 0 #d09d03;
 }
 
@@ -167,15 +193,15 @@ p{
 
 /*-------- FOOTER --------*/
 
-.social ul li{
+.social ul li {
 	display: inline-block;
 }
 
-.social ul li i{
+.social ul li i {
 	margin-right: 0.4rem;
 }
 
-.logo-footer{
+.logo-footer {
 	width: 10rem;
 }
 
@@ -196,15 +222,16 @@ li {
 	margin-bottom: 1rem;
 }
 
+
 /*-------- MEDIA QUERIES --------*/
 
-@media only screen and (max-width: 993px){
+@media only screen and (max-width: 993px) {
 	iframe {
 	    height: 17rem;
 	}
 }
 
-@media only screen and (min-width: 993px){
+@media only screen and (min-width: 993px) {
 	.col.s12.l10.banner-col {
     	padding: 0 0;
 	}
@@ -235,7 +262,7 @@ li {
 }
 	
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
 	.col.l6.cel-text.white-text {
     	padding: 0px 15rem 0 4rem;
 	}

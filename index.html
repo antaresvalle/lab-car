@@ -24,6 +24,49 @@
 			</div>
 		</nav>
 		<!-- MODAL INICIAR SESION-->
+		<div id="iniciar-sesion" class="modal teal accent-4">
+			<div class="modal-content">
+				<div>
+					<a href="#!" class="modal-close waves-effect waves-green btn-flat right">×</a>
+				</div>
+				<div class="row">
+					<div class="col l4 offset-l4">
+						<img src="assets/images/user.png">
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<form class="col l12">
+						<div class="grey lighten-3 col l8 offset-l2">
+							<div class="row">
+								<div class="input-field col l12">
+									<i class="material-icons prefix">account_circle</i>
+									<input placeholder="Username" id="username" type="text" class="validate">
+									<label for="username"></label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col l12">
+									<i class="material-icons prefix">lock</i>
+									<input placeholder="Password" id="password" type="text" class="validate">
+									<label for="password"></label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col l12 center">
+									<a class="waves-effect waves-light btn amber white-text">Login</a>
+								</div>
+							</div>
+							<div class="row">
+								<div class="input-field col l12">
+									<span>Forgot your password?<a href="#"> Click here</a></span>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 	</header>
 	<!-- HERO -->
 	<section class="hero">
@@ -33,14 +76,120 @@
 				<div class="hide-on-med-and-down">
 					<h4>Disfruta del viaje.<br>Eres dueño de tu tiempo</h4>
 					<h5>Viaja con <img class="logo-banner-hero-l responsive-img" src="assets/images/logoBlanco.png" alt=""></h5>
-					<a class="waves-effect waves-light btn white black-text btn-reg">REGÍSTRATE</a>
+					<a class="waves-effect waves-light btn white black-text btn-reg modal-trigger" href="#registrate">REGÍSTRATE</a>
 					<hr class="o-bien">
-					<a class="waves-effect waves-light btn white black-text btn-cond">Conviértete en conductor</a>
+					<a class="waves-effect waves-light btn white black-text btn-cond modal-trigger" href="#conduce">Conviértete en conductor</a>
 				</div>
 
 				<!-- MODAL REGISTRATE -->
+				<div id="registrate" class="modal  grey darken-2">
+					<div class="modal-content">
+						<div>
+							<a href="#!" class="modal-close waves-effect waves-green btn-flat right">×</a>
+						</div>
+						<div class="row">
+							<form class="col l12">
+								<div class="row">
+									<div class="col l12 center">
+										<a class="waves-effect waves-light btn black white-text center btn-modal">Ya tienes una cuenta?</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col l6 white-text">
+										<input placeholder="Nombre" id="first_name" type="text" class="validate">
+									</div>
+									<div class="input-field col l6">
+										<input placeholder="Apellido" id="last_name" type="text" class="validate">
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col l12">
+										<input placeholder="Correo Electronico" id="email" type="email" class="validate">
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col l12">
+										<input placeholder="Constraseña" id="password-r" type="password" class="validate">
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col l12">
+										<input placeholder="Ciudad" id="ciudad" type="text" class="validate">
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col l12">
+										<input placeholder="(Opcional) Código de invitación" id="codigo" type="text" class="validate">
+									</div>
+								</div>
+								<div class="input-field col s12 white-text">
+									<select>
+										<option value="" disabled selected>Como te enteraste de nosotros?</option>
+										<option value="1">Option 1</option>
+										<option value="2">Option 2</option>
+										<option value="3">Option 3</option>
+									</select>
+
+								</div>
+								<div class="row">
+									<div class="input-field col l12 center">
+										<a class="waves-effect waves-light btn-large light-blue lighten-3 white-text center btn-modal">Enviar</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 				<!-- MODAL CONVIERTETE EN CONDUCTOR -->
-				<a class="waves-effect waves-light btn white black-text hide-on-large-only">Decarga la app</a>
+				<div id="conduce" class="modal  grey darken-2">
+					<div class="modal-content">
+						<div>
+							<a href="#!" class="modal-close waves-effect waves-green btn-flat right">×</a>
+						</div>
+						<div class="row">
+							<form class="col l12">
+								<div class="input-field col s12 white-text">
+									<select>
+										<option value="" disabled selected>¿Tienes vehículos de 4 puertas?</option>
+										<option value="1">Sí</option>
+										<option value="2">No</option>
+									</select>
+								</div>
+								<div class="input-field col s12 white-text">
+									<select>
+										<option value="" disabled selected>Marca - Elige la marca del vehículo</option>
+										<option value="1">Option 1</option>
+										<option value="2">Option 2</option>
+										<option value="3">Option 3</option>
+									</select>
+									<small>¿No ves tu vehículo en esta lista? Envía un correo electrónico a sociosmdv@muestra.com</small>
+								</div>
+								<div class="input-field col s12 white-text">
+									<select>
+										<option value="" disabled selected>Año</option>
+										<option value="1">2017</option>
+										<option value="2">2016</option>
+										<option value="3">2015</option>
+									</select>
+								</div>
+								<div class="row">
+									<div class="input-field col l12">
+										<input placeholder="Número de matrícula" id="codigo" type="text" class="validate">
+										<small>La informaci[on de la matrícula ayuda a los clientes a identificar tu vehículo</small>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col l12 center">
+										<a class="waves-effect waves-light btn-large light-blue lighten-3 white-text center btn-modal">Enviar</a>
+									</div>
+								</div>
+								
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<a class="waves-effect waves-light btn white black-text hide-on-large-only">Descarga la app</a>
 			</div>
 		</div>
 	</section>

@@ -4,6 +4,19 @@
 	box-sizing: border-box;
 }
 
+hr {
+	border: 1px white solid;
+}
+/*-------- HEADER --------*/
+
+header{
+	padding: 1rem 0;
+}
+
+nav.white{
+	box-shadow: none;
+}
+
 nav ul a {
 	color: #212121;
 }
@@ -12,24 +25,67 @@ nav a{
 	color: #212121;
 }
 
-/*nav .brand-logo{
-	transform: translate(-80%);
-}*/
+a.brand-logo.left{
+	left: 60px;
+}
+
+ul.right.hide-on-med-and-down{
+	margin-right: 5%;
+}
 
 
 .padding-top-bottom{
 	padding: 2rem 0;
 }
+
+/*-------- MODAL --------*/
+
+form.col.l12 {
+    padding: 1rem;
+}
+
+.grey.lighten-3.col.l8.offset-l2 {
+    padding: 2rem;
+}
+
+/*-------- HERO --------*/
 .hero{
 	background-image: url(../assets/images/taxi.jpg);
 	background-size: cover;
-	padding: 17vh 0;
+	padding: 8rem 0;
     background-position: bottom;
     color: white;
 }
 
-.banner-hero{
-	height: 26vh;
+img.logo-banner-hero.responsive-img {
+    max-width: 38%;
+}
+
+img.logo-banner-hero-l.responsive-img {
+     width: 23%; 
+}
+
+.col.s9.l5.offset-s3.offset-l7.amber.banner-hero{
+	padding-bottom: 2rem;
+}
+
+.btn-reg, .btn-cond{
+	margin: 1rem 0;
+}
+
+hr.o-bien{
+	text-align: center;
+	border: 1px white solid;
+}
+
+hr.o-bien:after{
+	content: "O bien";
+	display: inline-block;
+	padding: 0 1em;
+    position: relative;
+    font-size: 1.2em;
+    top: -.7em;
+    background-color: #ffc107;
 }
 
 .row{
@@ -42,51 +98,74 @@ nav a{
 
 .btn{
 	text-transform: none;
+	border-radius: 5px; 
 }
 
-.border{
+.border {
 	border: 1px solid white;
 
 }
 
-.banner{
+/*-------- SECTION 01 BANNER CEL --------*/
+
+.banner-section-01 {
 	padding: 2rem 0;
 }
 
-img{
+img {
 	max-width: 100%;
 }
 
-.center{
+.center {
 	text-align: center;
 }
 
-.conductor{
+.col.l12.hide-on-med-and-down {
+    padding: 2rem 0;
+}
+
+.col.l6.cel {
+    padding-left: 15rem;
+}
+
+/*-------- CONDUCTOR --------*/
+.conductor {
 	background-image: url(../assets/images/conduce.jpg);
 	background-size: cover;
 	background-position: center;
-	height: 40vh;
 }
 
-.col.s12.mask{
+.col.s12.mask {
 	background-color: rgba(0,0,0,0.5);
-	height: 40vh;
-	    padding: 4rem;
+	padding: 4rem 2.5rem 11rem 2.5rem;
 }
 
-/*.ruta {
-    text-align: center;
-}*/
+/*-------- RUTA --------*/
+
+i.material-icons.ruta {
+    color: white;
+}
+
+input#from, input#to{
+	border-bottom: 1px solid white;
+}
+
+input#from:focus, input#to:focus{
+	box-shadow: 0 1px 0 0 #d09d03;
+}
 
 p{
 	font-size: 1.2em;
 }
 
-.map{
+.map {
 	padding: 2rem 0;
 	border: 1px solid white;
 	margin-top: 2rem;
 }
+
+
+/*-------- FOOTER --------*/
 
 .social ul li{
 	display: inline-block;
@@ -98,4 +177,74 @@ p{
 
 .logo-footer{
 	width: 10rem;
+}
+
+li {
+	margin-bottom: 1em;
+}
+
+.col.l3.social {
+    position: relative;
+    padding-top: 17rem;
+}
+
+.col.l3.downlad-icons {
+    padding-top: 11rem;
+}
+
+.col.l3.downlad-icons img {
+	margin-bottom: 1rem;
+}
+
+/*-------- MEDIA QUERIES --------*/
+
+@media only screen and (max-width: 993px){
+	iframe {
+	    height: 17rem;
+	}
+}
+
+@media only screen and (min-width: 993px){
+	.col.s12.l10.banner-col {
+    	padding: 0 0;
+	}
+
+	.col.l6.cel {
+    	padding-left: 8rem;
+	}
+
+	.col.l6.cel-text.white-text {
+	    padding-right: 8rem;
+	}
+
+	.col.s12.text-tarifas.l6 {
+	    padding: 2rem 13rem 2rem 6rem;
+	}
+
+	iframe {
+	    height: 23rem;
+	    padding: 1rem;
+	    width: 24rem;
+	}
+
+	.map {
+		border: 0;
+	}
+
+
+}
+	
+
+@media only screen and (min-width: 1200px){
+	.col.l6.cel-text.white-text {
+    	padding: 0px 15rem 0 4rem;
+	}
+
+	.col.l6.cel {
+    	padding-left: 15rem;
+	}
+
+	.col.l6.cel-text.white-text {
+	    padding-right: 12rem;
+	}
 }
